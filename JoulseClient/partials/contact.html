@@ -1,0 +1,25 @@
+<div ng-controller="ContactController">
+
+	<p>Joulse Power Client > <a href="" ng-click="switchView('login')">Login</a> > <a ng-click="switchView('contacts')" href="">Contacts</a> > {{ contact.FirstName }} {{ contact.LastName }}</p>
+
+	<h2>Contact {{ contact.username }}</h2>
+
+	<div style="float: left;">
+		<ul>
+			<li><b>{{ contact.FirstName }} {{ contact.LastName }}</b> - <a href="mailto:{{ contact.EmailAddress }}">{{ contact.EmailAddress }}</a>
+				<ul ng-repeat="role in contact.Roles">
+					<li>{{ role }}</li>
+				</ul>
+				<ul>
+					<li>{{ contact.Company.Name }}</li>
+					<li>{{ contact.Company.City }}</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+	<div style="float: right;">
+		<p><button ng-click="">Remove contact</button></p>
+		<textarea ng-model="console" cols="80" rows="20" style="border: none;"></textarea>
+	</div>
+</div>

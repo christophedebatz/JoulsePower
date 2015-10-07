@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoulsePower", "JoulsePower\JoulsePower.csproj", "{B8DB862E-D8B2-420A-B2A2-FDEC288DA4AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoulsePowerTests", "JoulsePowerTests\JoulsePowerTests.csproj", "{DEEF2A4A-B343-4949-B455-DF8AEA63D5F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{391DE5F6-A489-48C1-9D60-F247BFFB690C}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8DB862E-D8B2-420A-B2A2-FDEC288DA4AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8DB862E-D8B2-420A-B2A2-FDEC288DA4AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8DB862E-D8B2-420A-B2A2-FDEC288DA4AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8DB862E-D8B2-420A-B2A2-FDEC288DA4AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEEF2A4A-B343-4949-B455-DF8AEA63D5F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEEF2A4A-B343-4949-B455-DF8AEA63D5F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEEF2A4A-B343-4949-B455-DF8AEA63D5F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEEF2A4A-B343-4949-B455-DF8AEA63D5F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

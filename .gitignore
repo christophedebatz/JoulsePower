@@ -1,0 +1,8 @@
+/packages
+.git/
+*.git
+TestResults/
+*.log*
+obj/
+bin/
+*.suo

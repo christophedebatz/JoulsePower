@@ -1,0 +1,68 @@
+<div ng-controller="AddContactController">
+	<style type="text/css">
+	form {
+	    width: 40%;
+	    margin: 0;
+	}
+
+	label, input {
+	    display: inline-block;
+	}
+
+	label {
+	    width: 30%;
+	    text-align: right;
+	}
+
+	label + input {
+	    width: 30%;
+	    margin: 0 30% 0 4%;
+	}
+
+	input + input {
+	    float: right;
+	}
+	</style>
+
+	<p>Joulse Power Client > <a href="" ng-click="switchView('login')">Login</a> > <a ng-click="switchView('contacts')" href="">Contacts</a> > Add contact</p>
+
+	<div ng-show="emptyFields" style="padding: 15px; background-color: #ffc0cb; border: 1px solid #F6546A;">
+		Some fields are empty.
+	</div>
+
+	<form>
+		<fieldset>
+			<legend>Contact</legend>
+		
+			<label>Id</label>
+		    <input type="text" ng-model="newContact.Id"/>
+
+			<label>First name</label>
+		    <input type="text" ng-model="newContact.FirstName"/>
+
+		    <label>Last name</label>
+		    <input type="text" ng-model="newContact.LastName"/>
+
+		    <label>Email address</label>
+		    <input type="text" ng-model="newContact.EmailAddress"/>
+		</fieldset>
+
+		<fieldset><legend>Company</legend>
+		    <label>Id</label>
+		    <input type="text" ng-model="newContact.Company.Id"/>
+
+		    <label>Name</label>
+		    <input type="text" ng-model="newContact.Company.Name"/>
+
+		    <label>City</label>
+		    <input type="text" ng-model="newContact.Company.City"/>
+		</fieldset>
+	    <p align="center">
+	    	<button ng-click="validate(newContact)">Validate</button>
+	    </p>
+	</form>
+
+	<div style="float: right;">
+		<textarea ng-model="console" cols="80" rows="20" style="border: none;"></textarea>
+	</div>
+</div>
